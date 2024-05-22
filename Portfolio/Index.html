@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./Portfolio.css">
+</head>
+
+<body>
+
+    <!-------Navbar------->
+    <nav class="navbar navbar-expand-lg navbar-light fs-6 h1">
+        <div class="container-fluid">
+            <button class="navbar-toggler bg-info btn btn-danger btn-outline-light mt-3" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-md-5 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-white  " aria-current="page" href="./Index.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-white" aria-current="page" href="./Index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a  class="nav-link rounded text-white" id="contact" href="#">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-white" id="Project" href="#">Project</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link rounded text-white" id="Skills" href="#">Skills</a>
+                    </li>
+                </ul>
+
+                <form class="d-flex text-white align-items-center" role="search">
+                    <img class="rounded" style="width: 30px; height: 30px;" src="./Cv_Profile1.jpg" alt=""><span class="profile btn btn-outline-light ms-1">Profile</span>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <!-- -----------------Intro--------------- -->
+    <div class="container-fluid ">
+        <div class="row">
+
+            <div class="col-md-3 col-12 ms-md-5 text-start ms-2 mt-5 borde border-info">
+                <div class="name fw-bold text-white">
+                    <span class="span1 fs-2">Hi, I'm</span>
+                    <span class="span2 fs-1 fw-600 ms-2">Indhuraj</span>
+                </div>
+                <div class="fsd fw-bold fs-3">
+                    <span>Full Stack Developer</span>
+                </div>
+            </div>           
+        </div>
+    </div>
+
+
+    <div class="container col-md-4 col-9 ms-md-5 text-start ms-2 borde border-info">
+        <div class="row">
+            <div class="intro text-white">
+                <p>
+                    Actully I'm a non-IT Background,
+                    seeking a challenging position in the IT industry.
+                    Proven ability to quickly adapt to new challenges and strong commitment to staying updated on
+                    technological advancements.
+                    Seeking a position that allows me to apply my existing skills while acquiring new technical
+                    expertise.
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <!-- -----------------------Contact Card & Project Body & Skills---------------- -->
+       
+    <div class="outerbox d-flex col-md-6 col-6">
+        <!-- -----------------------Contact Card---------------- -->
+
+        <div class="contactbox p-1 rounded col-md-4 col-2">
+
+            <div class="iconbox">
+                <div class="icons">
+                    <div><img class="w-25" src="./Contact Icons/Phn icon.png" alt=""></div>
+                    <div class="text  py-2">+91 9159220385</div>
+                </div>
+
+                <div class="icons">
+                    <div><img class="w-25" src="./Contact Icons/GitHub icon.png" alt=""></div>
+                    <div class="text  py-2"><a target="_blank" href="https://github.com/CiR03">GitHub</a></div>
+                </div>
+
+                <div class="icons">
+                    <div><img class="w-25" src="./Contact Icons/Mail icon.png" alt=""></div>
+                    <div class="text  py-2"><a target="_blank" href="indhurajcir03@gmail.com">CiR</a></div>
+                </div>
+
+                <div class="icons">
+                    <div class=""><img class="w-25" src="./Contact Icons/Location icon.png" alt=""></div>
+                    <div class="text py-2">Tiruttani, TamilNadu</div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ------------------ProjeProject Carousel------------------- -->
+        <div class="project col-md-3 p-3">
+            <div class="imgbody p-1">
+                <div class="row">
+                    <div id="carouselExampleDark" class="carousel carousel-light slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0"
+                                class="active bg-warning" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1"
+                                class="bg-primary" aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2"
+                                class="bg-primary" aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="3"
+                                class="bg-primary" aria-label="Slide 4"></button>
+                            <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="4"
+                                class="bg-primary" aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active" data-bs-interval="5000">
+                                <img src="./Project Scrn Sht/Screenshot (1).png" class="d-block w-100"
+                                    alt="Project Screen Shot">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./Project Scrn Sht/Screenshot (2).png" class="d-block w-100"
+                                    alt="Project Screen Shot">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./Project Scrn Sht/Screenshot (3).png" class="d-block w-100"
+                                    alt="Project Screen Shot">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./Project Scrn Sht/Screenshot (4).png" class="d-block w-100"
+                                    alt="Project Screen Shot">
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="./Project Scrn Sht/Screenshot (5).png" class="d-block w-100"
+                                    alt="Project Screen Shot">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon btn btn-primary" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon btn btn-primary" aria-hidden="true"></span>
+                            <span class="visually-hidden ">Next</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <button class="zoom mt-0 mt-3 btn btn-outline-light  text-white pt-1">zoom</button>
+        </div>
+    </div>
+    <!-- -----------------------Skills---------------- -->
+    <div class="menubody">
+        <div class="menu">
+        <div class="plusbox">
+            <div class="plusicon">+</div>
+        </div>
+        <li style="--i:0;"><span class="circle3d" id="span1"><img class="rounded-circle w-50 img1"
+                    src="./Skills Icon/html5.png" alt="skills html5"></span></li>
+        <li style="--i:1;"><span class="circle3d" id="span2"><img class="rounded-circle w-50 img2"
+                    src="./Skills Icon/CSS3.png" alt="skills CSS3"></span></li>
+        <li style="--i:2;"><span class="circle3d" id="span3"><img class="rounded-circle w-50 img3"
+                    src="./Skills Icon/Bootstrap.png" alt="skills bootstrap"></span></li>
+        <li style="--i:3;"><span class="circle3d" id="span4"><img class="rounded-circle w-50 img4"
+                    src="./Skills Icon/Js.png" alt="skills js"></span></li>
+        <li style="--i:4;"><span class="circle3d" id="span5"><img class="rounded-circle w-50 img5"
+                    src="./Skills Icon/MS SQL.png" alt="skills MSSQL"></span></li>
+        <li style="--i:5;"><span class="circle3d" id="span6"><img class="rounded-circle w-50 img6"
+                    src="./Skills Icon/C sharp.png" alt="skills c sharp"></span></li>
+        <li style="--i:6;"><span class="circle3d" id="span7"><img class="rounded-circle w-50 img7"
+                    src="./Skills Icon/Asp.net.png" alt="skills Asp"></span></li>
+        <li style="--i:7;"><span class="circle3d" id="span8"><img class="rounded-circle w-50 img8"
+                    src="./Skills Icon/Ps.png" alt="skills ps"></span></li>
+    </div>
+
+</div>
+
+<div class="Resumebody">
+        <div class="card">
+            <div class="cover">
+                <img class="w-100"  src="./Cv Book/Cv Cover Page.png" alt="">
+                    <img class="profile w-100" src="./Cv Book/Cv_Profile1.jpg" alt="">
+            </div>
+            <div class="resume">
+                <img class="cv w-100" src="./Cv Book/Resume Pic.jpg" alt="">
+                <a href="./Cv Book/Resume Pic.jpg" download="Resume.jpg" class="btn btn-info">Download</a>
+
+            </div>
+    </div>
+
+    </div>
+</div>
+
+
+    <!-- ---------------Mobile-------------- -->
+    <div class="container-fluid col-1 ms-0">
+        <div class="row">
+            <div class="mobile d-flex">
+                <img class="mobilimg" src="./Mobile 3D Png.png" alt="">
+            </div>
+        </div>
+    </div>
+
+
+
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./Portfolio.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,423 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+btn{
+    cursor: pointer;
+}
+body
+{
+ background-image: url(./Techy.png);
+ background-position: center;
+ background-repeat: no-repeat;
+ background-size: cover;
+ min-height: 100vh; 
+ overflow: hidden;
+}
+/* --------------------Nava bar------------ */
+nav{
+    /* background-color: rgb(42, 2, 70); */
+    backdrop-filter: blur(5px);
+}
+ul a{
+    font-family: Arial;
+    text-decoration: none;
+}
+
+.nav-item :hover{
+    height: 35px;
+    background-color: rgb(255, 39, 237);
+    color: #000;
+    border-bottom: 5px solid rgb(255, 255, 255);
+}
+/* ---------------------Intro------------------------ */
+.span2{
+    color: rgb(243, 103, 173);
+    /* color: rgb(76, 0, 255); */
+    /* -webkit-text-stroke: 0.5px rgb(255, 255, 255); */
+    font-size: 55px;
+}
+
+.name{
+    letter-spacing: 1px;
+    width: 100%;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typing 3s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+   
+}
+
+.fsd{
+    color: aqua;
+    height: 50px;
+    overflow: hidden;
+    display: flex;
+}
+
+.fsd span{
+    animation: fsd 3s;
+    animation-iteration-count: 5;
+    animation-direction: alternate;
+
+   
+}
+
+.intro{
+    height: 55px;
+    overflow: hidden;
+}
+
+.intro p{
+    font-size: 13px;
+    margin-top: 100px;
+    animation: intro 10s 1 5s;
+    animation-play-state: running;
+    cursor: pointer;
+
+}
+.intro p:hover
+{
+    animation-play-state: paused;
+}
+
+
+/* <-------------Contact Button-------------> */
+
+/* -------------------Contact Card & Animation----------------------- */
+.contactbox{
+    display: flex;
+    justify-content: center;
+    width: 250px;
+    height: 250px;
+    margin-left: -300px;
+    margin-top: -10px;
+    position: relative;
+    z-index: 5;
+    transition: 2s;
+    transition-delay: 2s;
+    transform: scale(.25);
+    align-items: center;
+}
+.iconbox
+{
+    position: absolute;
+    top: 5px;
+}
+.contacttoggle{
+    width: 250px;
+    height: 250px;
+    margin-left: 53px;
+    transform: scale(1);
+}
+.icons{
+    display: flex;
+    justify-content: start;
+    height: auto;
+    align-items: center;
+    margin: 10px;
+    /* margin-left: 55px; */
+    padding-left: 8px;
+    width: 150px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 2px 5px 8px rgb(141, 165, 189),
+    inset -2px -3px 9px rgb(50, 133, 133);
+}
+.text a{
+    text-decoration: none;
+    color:rgb(0, 0, 0);
+    font-weight: bold;
+}
+.text{
+    font-size: 11px;
+    margin-left: -55px;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+}
+
+/* <----------------MObile & Animation----------------> */
+.mobilimg{
+    height: 90px;
+    transition: 3s;
+
+}
+.mbltoggle{
+    translate:-80px -200px;
+    transform: scale(3.7);
+    /* position: relative; */
+}
+.mobile{
+    margin-top: 15px;
+    margin-left: 220px;
+    position: fixed;
+    z-index: 4;
+}
+
+/* <-------------Carousel Project--------------> */
+.outerbox{
+    overflow: hidden;
+}
+.project{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    width: 250px;
+    height: 180px;
+    margin-left: 345px;
+    transform: skewX(20deg);
+    backdrop-filter: blur(5px);
+    border-radius: 10px;
+    opacity: 0;
+    transition: 2s;
+
+}
+.projectactive{
+    width: 450px;
+    height: 200px;    
+    transform: skew(1deg);
+}
+.projecttoggle{
+    opacity: 1;
+
+}
+.zoom{
+    position: relative;
+    z-index: 1000;
+}
+
+.imgbody{
+    border-radius: 5px;
+    box-shadow:  inset -12px -13px 10px #0213ff, inset 12px 13px 10px #0044ff;
+
+}
+
+/* <----------------------Skills----------------------> */
+
+
+.menubody{
+    position: absolute;
+    right: -350px;
+    top: 200px;
+    transition: 2s;
+    animation-name: circlerotate;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-play-state: paused;
+
+}
+.menuactiveanime{
+    animation-delay: 3s;
+    animation-play-state: running;
+    animation-fill-mode: backwards;
+}
+.menuactive
+{
+    right: 10px;
+    top: 200px;
+}
+
+.menu 
+{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    backdrop-filter: blur(9px);
+    box-shadow: 2px 2px 3px grey,-2px -2px 3px grey;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+.menu li{
+    position: absolute;
+    left: 0px;
+    list-style: none;
+    transform-origin: 150px;
+    transition: 1s;
+    transition-delay: calc(0.1s* var(--i));
+    transform: rotate(0deg) translateX(125px);
+    
+}
+.plusbox{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    /* border:1px solid aqua; */
+    box-shadow: 2px 2px 3px grey,-2px -2px 3px grey;
+
+}
+.active li
+{
+    transform: rotate(calc(360deg / 8 * var(--i)));
+
+}
+
+.circle3d{
+    background: radial-gradient(circle at 15px 20px, 
+    #21c2fddc,rgb(2, 63, 150),rgb(2, 33, 68),rgb(255, 0, 221));
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 2px;
+    transform: rotate(calc(360deg / -8 * var(--i)));
+
+}
+
+.plusicon
+{
+    font-size: 2em;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 10;
+    width: 55px;
+    height: 55px;
+    border-radius: 50%;
+    transition: 1.2s;
+    animation-name: pluszoom;
+    background-color: white;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-timing-function: linear;
+
+
+}
+.plusactive{
+    transform: rotate(315deg);
+    animation-play-state: paused;
+    animation: none;
+}
+
+/* <----------------------Resume----------------------> */
+.Resumebody{
+    position: absolute;
+    left: 210px;
+    bottom: 8px;
+    transform: perspective(1000px) rotateX(-85deg) rotateZ(60deg);
+    transition: 2s;
+
+}
+.Resumebodyactive{
+    translate: 350px -150px;
+    transform: perspective(1000px) rotateX(0deg) rotateZ(0deg);
+
+}
+.card{
+    position: relative;
+    width: 100px;
+    height: 140px;
+    background-color: aliceblue;
+    border-radius: 10px;
+    cursor: pointer;
+    box-shadow: 10px 0 20px grey;
+    transform: perspective(2000px) rotateZ(0);
+    transition: .5s ease;
+    transform-style: preserve-3d;
+}
+.cardactive{
+    width: 300px;
+    height: 400px;
+}
+.card:hover{
+    transform: perspective(2000px) rotate(-10deg);
+    transition: .5s;
+}
+.card:hover .cover
+{
+    transform: rotateY(-145deg);
+    transition: .5s;
+
+}
+.cover
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    transform-origin: left;
+    transform-style: preserve-3d;
+    transition: 1s ease;
+
+}
+.cover img{
+    position: absolute;
+    backface-visibility: hidden;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    object-fit: cover;
+    border-radius: 5px;
+
+}
+.cover img:nth-child(2)
+{
+    transform: rotateY(180deg);
+
+}
+.resume{
+    width: 100%;
+    height: 100%;
+    padding: 18px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    object-fit: contain;
+
+}
+
+
+
+/* <----------------------Overall Animation----------------------> */
+@keyframes typing
+{
+    from{width: 0; border-right: 4px solid black; border-color: white;}
+}
+@keyframes fsd
+{
+    from{margin-top: -200px;}
+}
+@keyframes intro{
+    0%{
+      margin-top: 100px;
+    }
+    25%{
+      margin-top: 0px;
+    }
+    100%{
+      margin-top: -45px;
+    }
+  
+}
+@keyframes circlerotate
+{
+    form{transform: rotate(0deg);}
+    to{transform:rotate(360deg)}
+}
+@keyframes pluszoom
+{
+    0%{background-color: rgb(0, 162, 255);}
+    50%{background-color: rgb(223, 121, 243);}
+    100%{background-color: rgb(213, 3, 255);}
+}
+
+ 
